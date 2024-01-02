@@ -1,0 +1,65 @@
+{
+  "name": "Bank Logger",
+  "short_name": "Logger",
+  "start_url": "http://yourdomain.com",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#519b84",
+  "categories": ["mobile", "multipurpose", "blog", "ecommerce", "pwa"],
+  "orientation": "landscape-primary",
+  "scope": ".",
+  "dir": "ltr",
+  "lang": "en-US",
+  "description": "Created by Virdi Gunawan S.Kom.",
+  "icons": [{
+      "src": "assets/img/icons/icon72.png",
+      "type": "image/png",
+      "sizes": "139x139"
+    },
+    {
+      "src": "assets/img/icons/icon96.png",
+      "type": "image/png",
+      "sizes": "185x185"
+    },
+    {
+      "src": "assets/img/icons/icon128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "assets/img/icons/icon144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "assets/img/icons/icon152.png",
+      "type": "image/png",
+      "sizes": "154x154"
+    },
+    {
+      "src": "assets/img/icons/icon167.png",
+      "type": "image/png",
+      "sizes": "167x167"
+    },
+    {
+      "src": "assets/img/icons/icon180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
+      "src": "assets/img/icons/icon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "assets/img/icons/icon384.png",
+      "type": "image/png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "assets/img/icons/icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
