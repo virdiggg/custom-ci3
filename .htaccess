@@ -1,5 +1,9 @@
 RewriteEngine On
 
+# Force HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
 RewriteCond $1 !^(index\.php|resources|robots\.txt|public)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -9,4 +13,12 @@ RewriteRule ^(.*)$ index.php?/$1 [QSA,L]
 <FilesMatch "(\.gitignore|\.editorconfig|\.htaccess|composer.json|composer.lock|README.md)">
     Order allow,deny
     Deny from all
+</FilesMatch>
+
+# Deny access to the .git directory
+RedirectMatch 404 /\.git
+
+# Deny access to specific files
+<FilesMatch "(^|/)\.git">
+    Require all denied
 </FilesMatch>
